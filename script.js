@@ -1,0 +1,47 @@
+// Hidden Gems
+var gemsButton = document.getElementById("hiddenGems");
+var subtitle = document.querySelector(".subtitle")
+var main = document.getElementById("mainContainer")
+var gems = document.getElementById("gems")
+var food = document.getElementById("food")
+var local = document.getElementById("local")
+
+gemsButton.addEventListener("click", hiddenGems)
+    function hiddenGems(){
+
+        food.innerHTML = ""
+        local.innerHTML = ""
+    }
+
+
+
+
+
+
+// Food Trucks
+var trucksButton = document.getElementById("foodTrucks");
+
+trucksButton.addEventListener("click", trucks)
+    function trucks(){
+
+        gems.innerHTML = ""
+        local.innerHTML = ""
+    }
+
+
+
+
+
+
+
+
+
+//Local Restaurants
+var foodButton = document.getElementById("localRestaurants");
+
+foodButton.addEventListener("click", localRest)
+    function localRest(){
+
+        gems.innerHTML = ""
+        food.innerHTML = ""
+    }
