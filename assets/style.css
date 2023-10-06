@@ -37,32 +37,31 @@ body {
   line-height: 1;
 }
 
- /*#hiddenGems {
-  height: 200px;
-}*/
-
-.hidden {
-  height: 200px;
+#hiddenGems {
+ width: 500px;
+  height: 00px;
   background-color: black;
   border: black solid 10px;
-  padding: 40px 10px 40px;
+  padding: 10px 10px 10px;
   cursor: pointer;
+  
 }
 
-.food {
-  height: 200px;
-  background-color: black;
-  border: black solid 10px;
-  padding: 25px 10px 25px;
-  cursor: pointer;
-}
-
-.local {
-  width: 350px;
+#foodTrucks {
+  width: 450px;
   height: auto;
   background-color: black;
   border: black solid 10px;
-  padding: 66px 10px 66px;
+  padding: 10px 10px 10px;
+  cursor: pointer;
+}
+
+#localRestaurants {
+  width: 500px;;
+  height: auto;
+  background-color: black;
+  border: black solid 10px;
+  padding: 10px 10px 66px;
   cursor: pointer;
    ;
 }
@@ -132,110 +131,74 @@ a {
   display:none;
 }
 
-.section {
+#background{
+background-repeat: no-repeat;
+background-color: white;
+background-position: center;
+background-size: 600px;
+}
+
+/* .section {
   display: flex;
-  flex-direction: column;
+  flex-direction: wrap;
   align-items: center;
   justify-content: center;
   min-height: 30vh; /* Adjust as needed */
-  text-align: center; /* Center the text within the section */
-  color:red;
-}
+ /* text-align: center; /* Center the text within the section */
+ /* color:red;
+}*/
 
-/* Local Restaurants*/
-#reset {
-  color: rgb(248, 9, 9); 
-  background-color: black;
-  position: center;
-  text-shadow: 4px 4px 12px;
+#fam {
+  color: rgb(221, 10, 10); 
+  position:left;
+  text-align: left;
+  text-shadow: 2px 2px 6px;
   font-size: 20px;
   letter-spacing: 12px;
-  padding: 10px 10px;
+  padding: 20px 50px;
   line-height: 1;
-  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;   
 
 }
 
-/*Gems*/
-.doseum {
-  height: 400px;
-  background-color: black;
-  border: black solid 10px;
-  padding: 25px 10px 25px;
-  cursor: pointer;
-}
-
-.yanaguana {
-  height: 400px;
-  background-color: black;
-  border: black solid 10px;
-  padding: 25px 10px 25px;
-  cursor: pointer;
-}
-
-.selfie {
-  height: 400px;
-  background-color: black;
-  border: black solid 10px;
-  padding: 25px 10px 25px;
-  cursor: pointer;
-}
-
-.gv {
-  height: 400px;
-  background-color: black;
-  border: black solid 10px;
-  padding: 25px 10px 25px;
-  cursor: pointer;
-}
-
-.trails {
-  height: 400px;
-  background-color: black;
-  border: black solid 10px;
-  padding: 25px 10px 25px;
-  cursor: pointer;
-}
-
-.nb {
-  height: 400px;
-  background-color: black;
-  border: black solid 10px;
-  padding: 25px 10px 25px;
-  cursor: pointer;
-}
-
-.rodeo {
-  height: 400px;
-  background-color: black;
-  border: black solid 10px;
-  padding: 25px 10px 25px;
-  cursor: pointer;
-}
-
-.bang {
-  height: 400px;
-  background-color: black;
-  border: black solid 10px;
-  padding: 25px 10px 25px;
-  cursor: pointer;
-}
-
-.yard {
-  height: 400px;
-  background-color: black;
-  border: black solid 10px;
-  padding: 25px 10px 25px;
-  cursor: pointer;
-}
-
-#night, #out, #fam {
+#out {
   color: rgb(221, 10, 10); 
-  position:center;
-  text-align: center;
+  position:left;
+  text-align: left;
   text-shadow: 2px 2px 6px;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 12px;
   padding: 10px 50px;
   line-height: 1;
+  cursor: pointer;   
+
+}
+
+#night {
+  color: rgb(221, 10, 10); 
+  position:left;
+  text-align: left;
+  text-shadow: 2px 2px 6px;
+  font-size: 20px;
+  letter-spacing: 12px;
+  padding: 10px 50px;
+  line-height: 1;
+  cursor: pointer;   
+
+}
+
+#reset {
+  color: rgb(248, 9, 9); 
+  background-color: black;
+  text-shadow: 2px 2px 6px;
+  font-size: 20px;
+  letter-spacing: 12px;
+  padding: 10px 10px 10px 10px;
+  line-height: 1;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.columns {
+  padding: 30px 10px 10px 0px
+
 }
