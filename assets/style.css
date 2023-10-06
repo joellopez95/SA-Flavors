@@ -132,12 +132,20 @@ a {
   display:none;
 }
 
-.section {
+#background{
+background-repeat: no-repeat;
+background-color: white;
+background-position: center;
+background-size: 600px;
+}
+
+/* .section {
   display: flex;
-  flex-direction: column;
+  flex-direction: wrap;
   align-items: center;
   justify-content: center;
   min-height: 30vh; /* Adjust as needed */
+
   text-align: center; /* Center the text within the section */
   color:red;
 }
@@ -239,3 +247,9 @@ a {
   padding: 10px 50px;
   line-height: 1;
 }
+
+  /* text-align: center; Center the text within the section */
+  /* color:red;  */
+/* } 
+
+
