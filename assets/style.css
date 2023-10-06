@@ -127,6 +127,7 @@ a {
   padding: 0px 10px;
   line-height: 1;
 }
+
 .hide{
   display:none;
 }
@@ -155,17 +156,18 @@ background-size: 600px;
 }
 
 /* Local Restaurants*/
-#reset {
-  color: rgb(248, 9, 9); 
-  background-color: black;
-  position: center;
-  text-shadow: 4px 4px 12px;
+
+
+#fam {
+  color: rgb(221, 10, 10); 
+  position:left;
+  text-align: left;
+  text-shadow: 2px 2px 6px;
   font-size: 20px;
   letter-spacing: 12px;
   padding: 20px 50px;
   line-height: 1;
   cursor: pointer;   
-
 }
 
 #out {
@@ -191,9 +193,6 @@ background-size: 600px;
   padding: 10px 50px;
   line-height: 1;
 }
->>>>>>>>> Temporary merge branch 2
-
-
 
 #reset {
   color: rgb(248, 9, 9); 
@@ -205,3 +204,13 @@ background-size: 600px;
   line-height: 1;
   border-radius: 5px 5px 5px 5px;
 }
+
+.columns {
+  padding: 30px 10px 10px 0px
+
+}
+
+>>>>>>>>> Temporary merge branch 2
+
+
+
