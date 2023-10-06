@@ -11,6 +11,7 @@ body {
   letter-spacing: 6px;
   padding: 40px 0px;
   line-height: 1.5;
+
 }
 
 .subtitle1 {
@@ -36,6 +37,36 @@ body {
   line-height: 1;
 }
 
+ /*#hiddenGems {
+  height: 200px;
+}*/
+
+.hidden {
+  height: 200px;
+  background-color: black;
+  border: black solid 10px;
+  padding: 40px 10px 40px;
+  cursor: pointer;
+}
+
+.food {
+  height: 200px;
+  background-color: black;
+  border: black solid 10px;
+  padding: 25px 10px 25px;
+  cursor: pointer;
+}
+
+.local {
+  width: 350px;
+  height: auto;
+  background-color: black;
+  border: black solid 10px;
+  padding: 66px 10px 66px;
+  cursor: pointer;
+   ;
+}
+
 .title {
   color: rgb(252, 34, 6); 
   position:left;
@@ -50,6 +81,8 @@ body {
   .footer {
     color: rgb(221, 10, 10); 
     /*background-color: black;*/
+    height: 250px;
+
   }
 
 #us {
@@ -112,7 +145,111 @@ background-size: 600px;
   align-items: center;
   justify-content: center;
   min-height: 30vh; /* Adjust as needed */
+
+  text-align: center; /* Center the text within the section */
+  color:red;
+}
+
+/* Local Restaurants*/
+#reset {
+  color: rgb(248, 9, 9); 
+  background-color: black;
+  position: center;
+  text-shadow: 4px 4px 12px;
+  font-size: 20px;
+  letter-spacing: 12px;
+  padding: 10px 10px;
+  line-height: 1;
+  border-radius: 5px 5px 5px 5px;
+
+}
+
+/*Gems*/
+.doseum {
+  height: 400px;
+  background-color: black;
+  border: black solid 10px;
+  padding: 25px 10px 25px;
+  cursor: pointer;
+}
+
+.yanaguana {
+  height: 400px;
+  background-color: black;
+  border: black solid 10px;
+  padding: 25px 10px 25px;
+  cursor: pointer;
+}
+
+.selfie {
+  height: 400px;
+  background-color: black;
+  border: black solid 10px;
+  padding: 25px 10px 25px;
+  cursor: pointer;
+}
+
+.gv {
+  height: 400px;
+  background-color: black;
+  border: black solid 10px;
+  padding: 25px 10px 25px;
+  cursor: pointer;
+}
+
+.trails {
+  height: 400px;
+  background-color: black;
+  border: black solid 10px;
+  padding: 25px 10px 25px;
+  cursor: pointer;
+}
+
+.nb {
+  height: 400px;
+  background-color: black;
+  border: black solid 10px;
+  padding: 25px 10px 25px;
+  cursor: pointer;
+}
+
+.rodeo {
+  height: 400px;
+  background-color: black;
+  border: black solid 10px;
+  padding: 25px 10px 25px;
+  cursor: pointer;
+}
+
+.bang {
+  height: 400px;
+  background-color: black;
+  border: black solid 10px;
+  padding: 25px 10px 25px;
+  cursor: pointer;
+}
+
+.yard {
+  height: 400px;
+  background-color: black;
+  border: black solid 10px;
+  padding: 25px 10px 25px;
+  cursor: pointer;
+}
+
+#night, #out, #fam {
+  color: rgb(221, 10, 10); 
+  position:center;
+  text-align: center;
+  text-shadow: 2px 2px 6px;
+  font-size: 25px;
+  letter-spacing: 12px;
+  padding: 10px 50px;
+  line-height: 1;
+}
+
   /* text-align: center; Center the text within the section */
   /* color:red;  */
 /* } 
+
 
