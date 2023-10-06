@@ -1,7 +1,9 @@
+/* Background color of body on all HTML */
 body {
   background-color: black;
 }
 
+/* Main Title at the top on all HTML */
 #HeroTitle { 
   color: black;
   position:left;
@@ -11,9 +13,9 @@ body {
   letter-spacing: 6px;
   padding: 40px 0px;
   line-height: 1.5;
-
 }
 
+/* Subtitle at the top on all HTML */
 .subtitle1 {
   color: rgb(248, 9, 9); 
   position:left;
@@ -25,8 +27,8 @@ body {
   line-height: 1;
 }
 
+/* Titles for pictures on main HTML */
 .subtitle {
-
   color: rgb(221, 10, 10); 
   position:left;
   text-align: left;
@@ -37,14 +39,15 @@ body {
   line-height: 1;
 }
 
+/*Pictures on main HTML */
+
 #hiddenGems {
  width: 500px;
-  height: 00px;
+  height: 300px;
   background-color: black;
   border: black solid 10px;
   padding: 10px 10px 10px;
   cursor: pointer;
-  
 }
 
 #foodTrucks {
@@ -63,9 +66,9 @@ body {
   border: black solid 10px;
   padding: 10px 10px 66px;
   cursor: pointer;
-   ;
 }
 
+/* Subtitle at the top of Body in main HTML */
 .title {
   color: rgb(252, 34, 6); 
   position:left;
@@ -77,13 +80,14 @@ body {
   line-height: 1;
 }
 
+/* Footer */
   .footer {
     color: rgb(221, 10, 10); 
     /*background-color: black;*/
     height: 250px;
-
   }
 
+  /* Get to know us at the bottom of all HTML */
 #us {
   color: rgb(221, 10, 10); 
   position:center;
@@ -95,17 +99,22 @@ body {
   line-height: 1;
   }
 
-a {
-  color:black;
-  position:left;
-  text-align: left;
-  text-shadow: 2px 2px 6px;
-  font-size: 20px;
-  letter-spacing: 12px;
-  padding: 0px 10px;
-  line-height: 1;
-}
+  /* Our names at the bottom of all HTML */
+  a {
+    color:rgb(0, 0, 0);
+    position:left;
+    text-align: left;
+    text-shadow: 2px 2px 6px;
+    font-size: 20px;
+    letter-spacing: 12px;
+    padding: 0px 10px;
+    line-height: 1;
+  }
 
+  /*hover over names*/
+  a:hover { color: rgb(248, 8, 8); }
+
+  /* Twitter icon at the bottom of all HTML */
 .fa-twitter {
     color: rgb(221, 10, 10); 
     position:center;
@@ -114,7 +123,29 @@ a {
     font-size: 20px;
     letter-spacing: 12px;
     padding: 0px 10px;
-    line-height: 1;
+    line-height: 1;  
+}
+
+ /*hover over twitter*/
+.fa-twitter:hover {
+  color: #030303;
+}
+
+/* Github icon at the bottom of all HTML */
+.fa-github {
+  color: rgb(5, 5, 5); 
+  position:center;
+  text-align: center;
+  text-shadow: 2px 2px 6px;
+  font-size: 20px;
+  letter-spacing: 12px;
+  padding: 0px 10px;
+  line-height: 1;
+}
+
+/*hover over github*/
+.fa-github:hover {
+  color: #ff0606;
 }
 
 .fa-linkedin {
@@ -128,10 +159,16 @@ a {
   line-height: 1;
 }
 
+/*hover over linkedin*/
+.fa-linkedin:hover {
+  color: #030303;
+}
+
+/*?*/
 .hide{
   display:none;
 }
-
+/*?*/
 #background{
 background-repeat: no-repeat;
 background-color: white;
@@ -152,13 +189,13 @@ background-size: 600px;
 
 =========
   text-align: center; /* Center the text within the section */
-  color:red;
+ /* color:red;
 }
 
-/* Local Restaurants*/
 
 
-#fam {
+/* Hidden Gems HTML*/
+#family {
   color: rgb(221, 10, 10); 
   position:left;
   text-align: left;
@@ -168,6 +205,7 @@ background-size: 600px;
   padding: 20px 50px;
   line-height: 1;
   cursor: pointer;   
+
 }
 
 #out {
@@ -192,8 +230,11 @@ background-size: 600px;
   letter-spacing: 12px;
   padding: 10px 50px;
   line-height: 1;
+  cursor: pointer;   
 }
 
+
+/* Reset Button on all HTML pages*/
 #reset {
   color: rgb(248, 9, 9); 
   background-color: black;
@@ -203,11 +244,16 @@ background-size: 600px;
   padding: 10px 10px 10px 10px;
   line-height: 1;
   border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
 }
 
+/*Space between columns */
 .columns {
-  padding: 30px 10px 10px 0px
+  padding: 30px 10px 10px 0px;
+}
 
+.img {
+  cursor: pointer;
 }
 
 >>>>>>>>> Temporary merge branch 2
