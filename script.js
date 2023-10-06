@@ -62,3 +62,16 @@
 // //          option1.innerHTML = "Family Friendly"
 // // }
 //     }
+
+//server side API
+
+var apiKey = '4DyyH4AnFqorWqgOpI8_NaayTK7d7o1NlMhRb5AUUQ3Z5wuZVfncigadK_s4w9PYDXCdFuJXXPUKHtvdnRyh-4g6IdwiwibwGMviF0RV45E17MwI7dDqnrd6rVkfZXYx';
+var apiUrl = 'https://api.yelp.com/v3/businesses/search?sort_by=best_match&limit=20';
+
+var options = {method: 'GET', headers: {accept: 'application/json'}};
+
+fetch(apiUrl, options)
+  .then(response => response.json())
+  .then(response => console.log(response))
+  .catch(err => console.error(err));
+
