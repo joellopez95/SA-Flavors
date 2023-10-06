@@ -144,15 +144,22 @@ background-size: 600px;
   align-items: center;
   justify-content: center;
   min-height: 30vh; /* Adjust as needed */
- /* text-align: center; /* Center the text within the section */
- /* color:red;
-}*/
+<<<<<<<<< Temporary merge branch 1
+  /* text-align: center; Center the text within the section */
+  /* color:red;  */
+/* } 
 
-#fam {
-  color: rgb(221, 10, 10); 
-  position:left;
-  text-align: left;
-  text-shadow: 2px 2px 6px;
+=========
+  text-align: center; /* Center the text within the section */
+  color:red;
+}
+
+/* Local Restaurants*/
+#reset {
+  color: rgb(248, 9, 9); 
+  background-color: black;
+  position: center;
+  text-shadow: 4px 4px 12px;
   font-size: 20px;
   letter-spacing: 12px;
   padding: 20px 50px;
@@ -183,9 +190,10 @@ background-size: 600px;
   letter-spacing: 12px;
   padding: 10px 50px;
   line-height: 1;
-  cursor: pointer;   
-
 }
+>>>>>>>>> Temporary merge branch 2
+
+
 
 #reset {
   color: rgb(248, 9, 9); 
@@ -196,9 +204,4 @@ background-size: 600px;
   padding: 10px 10px 10px 10px;
   line-height: 1;
   border-radius: 5px 5px 5px 5px;
-}
-
-.columns {
-  padding: 30px 10px 10px 0px
-
 }
