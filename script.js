@@ -64,14 +64,63 @@
 //     }
 
 //server side API
+//tried google maps, blocked by CORS
+/*var apiKey = 'AIzaSyDUJ6rFl2TKfn2JOTYQFnTv7uj1XUF3k9Q';
+var query = 'restaurants in San Antonio'; 
 
-var apiKey = '4DyyH4AnFqorWqgOpI8_NaayTK7d7o1NlMhRb5AUUQ3Z5wuZVfncigadK_s4w9PYDXCdFuJXXPUKHtvdnRyh-4g6IdwiwibwGMviF0RV45E17MwI7dDqnrd6rVkfZXYx';
-var apiUrl = 'https://api.yelp.com/v3/businesses/search?sort_by=best_match&limit=20';
+var apiUrl = `https://maps.googleapis.com/maps/api/place/textsearch/json?query=${query}&key=${apiKey}`;
 
-var options = {method: 'GET', headers: {accept: 'application/json'}};
-
-fetch(apiUrl, options)
+fetch(apiUrl)
   .then(response => response.json())
-  .then(response => console.log(response))
-  .catch(err => console.error(err));
+  .then(data => {
+    // Process the data here
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });*/
 
+//nutrition API Key
+  var query = '1lb of lean beef'
+$.ajax({
+    method: 'GET',
+    url: 'https://api.api-ninjas.com/v1/nutrition?query=' + query,
+    headers: { 'X-Api-Key': 'hIMS2Z0KH5Jqeiuugextrw==x2YQ5ZZOi7KaZqO1'},
+    contentType: 'application/json',
+    success: function(result) {
+        console.log(result);
+    },
+    error: function ajaxError(jqXHR) {
+        console.error('Error: ', jqXHR.responseText);
+    }
+});
+
+//Historical API Key
+var text = 'the alamo'
+$.ajax({
+    method: 'GET',
+    url: 'https://api.api-ninjas.com/v1/historicalevents?text=' + text,
+    headers: { 'X-Api-Key': 'hIMS2Z0KH5Jqeiuugextrw==x2YQ5ZZOi7KaZqO1'},
+    contentType: 'application/json',
+    success: function(result) {
+        console.log(result);
+    },
+    error: function ajaxError(jqXHR) {
+        console.error('Error: ', jqXHR.responseText);
+    }
+});
+
+//Coctails
+var name = 'bloody mary'
+$.ajax({
+    method: 'GET',
+    url: 'https://api.api-ninjas.com/v1/cocktail?name=' + name,
+    headers: { 'X-Api-Key': 'YOUR_API_KEY'},
+    contentType: 'application/json',
+    success: function(result) {
+        console.log(result);
+    },
+    error: function ajaxError(jqXHR) {
+        console.error('Error: ', jqXHR.responseText);
+    }
+});
