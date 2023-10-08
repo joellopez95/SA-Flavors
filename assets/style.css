@@ -164,35 +164,13 @@ body {
   color: #030303;
 }
 
-/*?*/
-.hide{
-  display:none;
-}
-/*?*/
+/* trucks page */
 #background{
 background-repeat: no-repeat;
 background-color: white;
 background-position: center;
 background-size: 600px;
 }
-
-/* .section {
-  display: flex;
-  flex-direction: wrap;
-  align-items: center;
-  justify-content: center;
-  min-height: 30vh; /* Adjust as needed */
-<<<<<<<<< Temporary merge branch 1
-  /* text-align: center; Center the text within the section */
-  /* color:red;  */
-/* } 
-
-=========
-  text-align: center; /* Center the text within the section */
- /* color:red;
-}
-
-
 
 /* Hidden Gems HTML*/
 #family {
@@ -256,7 +234,33 @@ background-size: 600px;
   cursor: pointer;
 }
 
->>>>>>>>> Temporary merge branch 2
+/* weather input in gems page */
+.search_bar input{
+  border: 0;
+  outline: 0;
+  padding: 10px 25px;
+  height: 20px;
+  border-radius: 15px;
+  width: 150px;
+  margin-right: 20px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* weather search bar button in gems page */
+.search_bar button{
+  border: 0;
+  outline: 0;
+  border-radius: 15px;
+  width: 30px;
+  height: px;
+  cursor: pointer;
+}
+/* weather search bar button in gems page */
+.search_bar button img{
+width: 15px;
+height: 20px;
+}
 
 
 

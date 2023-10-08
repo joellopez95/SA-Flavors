@@ -34,3 +34,40 @@ function search() {
     }
   });
 }
+
+var weather = {
+  apiKey:"f8e7222d3f62239de2cbfc102913bc69",
+  fetchWeather: function (city) {
+      fetch("https://api.openweathermap.org/data/2.5/weather?q=" 
+      + city
+      + "&units=imperial&appid=" 
+      + this.apiKey)
+      .then(response => response.json())
+      .then(data =>{   
+          console.log(data);
+ 
+      var {name} = data;
+      var {icon, description} = data.weather [0];
+      var {temp, humidity} = data.main;
+      var {speed} = data.wind;
+      console.log(name,icon,description,temp,humidity,speed);
+      document.querySelector(".city").innerText = name;
+      document.querySelector(".weather-icon").src = "https://openweathermap.org/img/wn/"+ icon + "@2x.png";
+      document.querySelector(".tempretaure").innerText = "Temp " + temp.toFixed(0) + "°F";
+      document.querySelector(".description").innerText = description;
+      document.querySelector(".humidity").innerText = humidity + "% humidity";
+      document.querySelector(".wind").innerText ="Wind " + speed + " mph";
+      // localStorage.setItem("city", city);
+      }
+      )},
+
+  search: function(){
+      this.fetchWeather(document.querySelector("#cityInput").value);
+  }
+};
+
+var myButton = document.getElementById("searchBtn");
+myButton.addEventListener("click",function(){  
+  weather.search();
+  weathers.search();
+});
