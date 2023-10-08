@@ -1,77 +1,36 @@
-// var resetButton = document.getElementById("resetButton");
+var myButton = document.getElementById("searchBtn");
+var queryInput = document.getElementById("foodSearch");
+var nutrition = document.getElementById("nutrition");
 
-// resetButton.addEventListener("click", function () {
-//   gems.innerHTML = initialGemsHTML;
-//   food.innerHTML = initialFoodHTML;
-//   local.innerHTML = initialLocalHTML;
+myButton.addEventListener("click", function () {
+  search();
+});
 
-//   setUpEventListeners();
-// });
-
-// // Hidden Gems
-// var gemsButton = document.getElementById("hiddenGems");
-// var subtitle = document.querySelector(".subtitle")
-// var main = document.getElementById("mainContainer")
-// var gems = document.getElementById("gems")
-// var food = document.getElementById("food")
-// var local = document.getElementById("local")
-
-// gemsButton.addEventListener("click", hiddenGems)
-//     function hiddenGems(){
-
-//         food.innerHTML = ""
-//         local.innerHTML = ""
-//     }
-
-
-
-
-
-
-// // Food Trucks
-// var trucksButton = document.getElementById("foodTrucks");
-
-// trucksButton.addEventListener("click", trucks)
-//     function trucks(){
-
-//         gems.innerHTML = ""
-//         local.innerHTML = ""
-//     }
-
-
-
-
-
-
-
-
-
-// //Local Restaurants
-// var foodButton = document.getElementById("localRestaurants");
-
-// foodButton.addEventListener("click", localRest)
-//     function localRest(){
-
-//         gems.innerHTML = ""
-//         food.innerHTML = ""
-  
-//         // var option1 = document.getElementById("option1")
-// // var option2 = document.getElementById("option2")
-// // var option3 = document.getElementById("option3")
-// // var hiddenGems = [{
-// //          option1.innerHTML = "Family Friendly"
-// // }
-//     }
-
-//server side API
-
-var apiKey = '4DyyH4AnFqorWqgOpI8_NaayTK7d7o1NlMhRb5AUUQ3Z5wuZVfncigadK_s4w9PYDXCdFuJXXPUKHtvdnRyh-4g6IdwiwibwGMviF0RV45E17MwI7dDqnrd6rVkfZXYx';
-var apiUrl = 'https://api.yelp.com/v3/businesses/search?sort_by=best_match&limit=20';
-
-var options = {method: 'GET', headers: {accept: 'application/json'}};
-
-fetch(apiUrl, options)
-  .then(response => response.json())
-  .then(response => console.log(response))
-  .catch(err => console.error(err));
-
+function search() {
+  var query = queryInput.value;
+  $.ajax({
+    method: 'GET',
+    url: 'https://api.api-ninjas.com/v1/nutrition?query=' + query,
+    headers: { 'X-Api-Key': 'u+4h51GAe7l7Bv3AmACSaQ==ERvGRsarbvzIFnGJ' },
+    contentType: 'application/json',
+    success: function (result) {
+      try {
+        console.log(result); 
+          var foodData = result[0];
+          if (foodData.name) {
+            var foodName = foodData.name;
+            var calories = foodData.calories;
+            var protein = foodData.protein_g;
+            var sugar = foodData.sugar_g;
+            nutrition.innerHTML = `Name: ${foodName}<br> Calories: ${calories}<br>Protein: ${protein}g<br>Sugar: ${sugar}g`;
+          } 
+      } catch (error) {
+        nutrition.innerHTML = "Error";
+        console.error('Error parsing JSON: ', error);
+      }
+    },
+    error: function ajaxError(jqXHR) {
+      console.error('Error: ', jqXHR.responseText);
+    }
+  });
+}
