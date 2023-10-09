@@ -4,7 +4,7 @@ var nutrition = document.getElementById("nutrition");
 
 myButton.addEventListener("click", function () {
   search();
-   renderLastNutrition();
+renderLastNutrition();
   
 });
 
@@ -26,7 +26,7 @@ function search() {
             var sugar = foodData.sugar_g;
             nutrition.innerHTML = `Name: ${foodName}<br> Calories: ${calories}<br>Protein: ${protein}g<br>Sugar: ${sugar}g`;
           } 
-          localStorage.setItem('foodData', JSON.stringify(foodData));
+localStorage.setItem('foodData', JSON.stringify(foodData));
       } catch (error) {
         nutrition.innerHTML = "Error";
         console.error('Error parsing JSON: ', error);
@@ -60,21 +60,41 @@ var weather = {
       document.querySelector(".description").innerText = description;
       document.querySelector(".humidity").innerText = humidity + "% humidity";
       document.querySelector(".wind").innerText ="Wind " + speed + " mph";
+     //changed string to savedCity
+     //stores info for future reference 
+      localStorage.setItem("savedCity", city);
       }
       )},
 
   search: function(){
-      this.fetchWeather(document.querySelector("#cityInput").value);
-  }
+    //got handle on city input
+    var city = document.querySelector("#cityInput").value
+    //call fetchweather
+    this.fetchWeather(city); 
+  },
+
+  //created function to load the last searched city from local storage
+  loadLastCity: function () {
+
+    //obtain string value from local storage
+    var savedCity = localStorage.getItem("savedCity");
+    //this will fetch and display weather data if there is a saved city in local storage
+    if (savedCity) {
+      this.fetchWeather(savedCity);
+    }
+  },
 };
 
 var myButton = document.getElementById("searchBtn");
-  myButton.addEventListener("click",function(){  
+myButton.addEventListener("click",function(){  
   weather.search();
+
 
  });
 
-
+ window.addEventListener("load", function () {
+  weather.loadLastCity();
+});
 
 
 function renderLastNutrition() {
@@ -95,3 +115,7 @@ function init() {
   renderLastNutrition();
 }
 init();
+
+
+ 
+
