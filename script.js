@@ -5,7 +5,7 @@ var nutrition = document.getElementById("nutrition");
 myButton.addEventListener("click", function () {
   search();
    renderLastNutrition();
-   
+  
 });
 
 function search() {
@@ -69,10 +69,10 @@ var weather = {
 };
 
 var myButton = document.getElementById("searchBtn");
-myButton.addEventListener("click",function(){  
+  myButton.addEventListener("click",function(){  
   weather.search();
-  weathers.search();
-});
+
+ });
 
 
 
@@ -82,10 +82,10 @@ function renderLastNutrition() {
   var lastFood = JSON.parse(localStorage.getItem('foodData'));
   // Check if data is returned, if not exit out of the function
   if (lastFood !== null) {
-    document.getElementById('foodName').innerHTML = lastFood.foodName;
+    document.getElementById('foodName').innerHTML = lastFood.name;
     document.getElementById('calories').innerHTML = lastFood.calories;
-    document.getElementById('protein').innerHTML = lastFood.protein;
-    document.getElementById('sugar').innerHTML = lastFood.sugar;
+    document.getElementById('protein').innerHTML = lastFood.protein_g;
+    document.getElementById('sugar').innerHTML = lastFood.sugar_g;
   }
 }
 
