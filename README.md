@@ -17,8 +17,8 @@ https://anthonystrickland.github.io/module-challenge-02/
 # Credits
 https://bulma.io/
 https://www.w3schools.com/
-https://www.panaderiajimenez.com/
 https://api-ninjas.com/api
+fontawesome
 
 
 # License
