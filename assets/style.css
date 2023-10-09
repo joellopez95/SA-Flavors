@@ -237,36 +237,45 @@ background-size: 600px;
  AnthonyBranch
 /* weather input in gems page */
 .search_bar input{
-  border: 0;
-  outline: 0;
-  padding: 10px 25px;
-  height: 20px;
-  border-radius: 15px;
-  width: 150px;
-  margin-right: 20px;
-  font-size: 20px;
+  border: 50;
+  outline: 50;
+  padding: 50px 50px;
+  height: 50px;
+  border-radius: 50px;
+  width: 10px;
+  margin-right: 200px;
+  font-size: 200px;
   font-family: 'Times New Roman', Times, serif;
 }
+ 
+.search_bar button img{
+  width: 50px;
+  height: 40px;
+  }
 
 /* weather search bar button in gems page */
 .search_bar button{
-  border: 0;
-  outline: 0;
-  border-radius: 15px;
-  width: 30px;
-  height: px;
+  background-color: rgb(13, 13, 13);
   cursor: pointer;
 }
-/* weather search bar button in gems page */
-.search_bar button img{
-width: 15px;
-height: 20px;
+
+/* city input bar in gems page */
+#cityInput {
+  color:#b7a5a5
+  font-size: 30px;
+  letter-spacing: 7px;
+  padding: 10px 100px 15px 20px;
+  cursor::target-text; 
 }
-=======
+
+.weather-icon {
+  padding: 10px 10px 10px 10px;
+}
+
 /*search button on food html*/
 #searchBtn {
   color: rgb(251, 6, 6); 
-  background-color: rgb(9, 9, 9);
+  background-color: rgb(13, 13, 13);
   text-shadow: 2px 2px 6px;
   font-size: 20px;
   letter-spacing: 12px;
@@ -274,7 +283,7 @@ height: 20px;
   line-height: 1;
   border-radius: 5px 5px 5px 5px;
   cursor: pointer;
- border: rgb(33, 32, 32) solid
+ border: rgb(33, 32, 32) solid;
 }
 
 /*input field on food html*/
@@ -293,15 +302,32 @@ height: 20px;
   text-shadow: 2px 2px 6px;
   font-size: 20px;
   letter-spacing: 12px;
-  padding: 10px 10px 10px 10px;
+  padding: 20px 20px 20px 20px;
   line-height: 1;
   border-radius: 5px 5px 5px 5px;
   cursor: pointer;
 }
 
+/* Truck nutrition */
+.button-is-primary {
+  color: rgb(251, 6, 6); 
+  background-color: rgb(9, 9, 9);
+  text-shadow: 2px 2px 6px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+ border: rgb(33, 32, 32) solid;
+}
 
-
-
+#foodSearch {
+  font-size: 20px;
+  letter-spacing: 10px;
+  padding: 0px 5px;
+  line-height: 1;
+  cursor: pointer; 
+}
 
 
 
