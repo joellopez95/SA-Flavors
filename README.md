@@ -8,10 +8,10 @@ As full-stack web developers, we want to create a website that will work as a gu
 To use this website, simply click on an image which represents the type of experience you are seeking.  There are three options to choose from:  Hidden Gems, Food Trucks, and Local Restaurants.  Once you click on the image, you will be directed to another page with different options to choose from.  The Hidden Gems page will have three categories listed with options for you to choose from.  Family fun, the great outdoors, and night life.  Under each of these categories, you will be given 3 different options to choose from.  clicking on the images will take you to the website and clicking on the activity name, will take you to the the company's social media.  Should you change your mind, simply click the reset button at the bottom of the page to take you back to the main page.  The food truck and local restaurants page will have the different options listed.  Click on the image to be directed to the website or click on the name to be directed to the company's social media.  Click reset at the bottom of the page to be directed back to the main page.  The Get to know us section at the bottom of the page will provide you with our individual github pages by clicking on our name.  The icons at the bottom of the page will direct you to the social media of the website.
 
 # Live Site Application
-[Link to Live Site]
+https://joellopez95.github.io/SA-Flavor-Finder/
 [Screenshot of application]![SA-Flavor-Finder](assets/images/SA-Flavor-Finder.png)
 https://anthonystrickland.github.io/module-challenge-02/
-[Link to updated portfolios]
+https://joellopez95.github.io/Project-Portfolio/
 [Link to updated portfolios]
 
 # Credits
