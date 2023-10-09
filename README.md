@@ -10,7 +10,7 @@ To use this website, simply click on an image which represents the type of exper
 # Live Site Application
 [Link to Live Site]
 [Screenshot of application]![SA-Flavor-Finder](assets/images/SA-Flavor-Finder.png)
-[Link to updated portfolio]
+https://anthonystrickland.github.io/module-challenge-02/
 [Link to updated portfolios]
 [Link to updated portfolios]
 
